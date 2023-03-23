@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="This is a news website for a community of people interested in IT"/>
+  <meta name="author" content="IT Community">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="keywords" content="IT Community, IT, IT news">
+    <link   rel = stylesheet type="text/css" href ="style/style.css">
+  <title> Blog</title>
+</head>
+    
+    
+<body>
+<nav>
+  <label for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle"/>
+  <div id="menu">
+    <ol>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="about%20community.html">About community</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="index.html">News and Insights</a></li>
+      </ol>
+     </div>
+</nav>
+<body>
+	<header>
+		<h1>Blogs</h1>
+	</header>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>No surprise — graphics cards have gotten twice as expensive since 2020</h2>
+				<h5>By Monica J. White, February 21, 2023</h5>
+				<div class="fakeimg">
+                <video width="320" height="240" controls>
+  <source src="img/video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+                </div>
+				<p>The latest scoop on GPU prices paints a pretty grim picture. It appears that the average prices of graphics cards have doubled between 2020 and 2023, and they show no signs of stopping.
+                
+                Text taken from: https://www.digitaltrends.com/computing/gpu-prices-2020-vs-2023-compared/</p>
+			</div>
+			<div class="card">
+				<h2>Cloud security services?</h2>
+				<h5>VIRTU, March 1, 2023</h5>
+				
+				<p>Many business necessities can no longer be satisfied by traditional IT infrastructure, prompting an increased number of organisations to turn to the cloud. Cloud environments bring with them a range of unique concerns that enterprises aren’t prepared to handle. Taken from: https://virtu.net/what-can-you-expect-from-managed-cloud-security-services/</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+				<div class="card">
+				<h3>Popular Posts</h3>
+				<div class="fakeimg" >New Harry Potter video game getting trendy </div>
+                    <div class="fakeimg" >2023 Computing trends and predictions </div>
+                    <div class="fakeimg" > Tech companies build out the metaverse</div>
+			
+			</div>
+			<div class="card">
+				<h3>Follow us</h3>
+				<p>Twitter</p>
+                <p>Facebook</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		
+	<style>
+		@media only screen and (min-width: 1011px) {
+		/* Main content */
+		.row {
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			grid-template-areas: "blog other";
+				
+			font-size: 20px;
+		}
+		.leftcolumn {
+			grid-area: blog;
+			width: 100%;
+		}
+		.rightcolumn {
+			grid-area: other;
+			border-left: groove crimson;
+			padding-left: 20px;
+		}
+		.card {
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+		.fakeimg {
+			width: 100%;
+			height: 250px;
+			
+		}
+
+		/* Footer */
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background-color: #ddd;
+			margin-top: 20px;
+                }
+        }
+/*        Mobile*/
+@media only screen and (max-width: 570px) {
+  .row {
+    display: block;
+  }
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  .rightcolumn {
+    border-left: none;
+    margin-top: 20px;
+  }
+  .card {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .fakeimg {
+    height: auto;
+  }
+    }
+	</style>
+    
+    	<footer>
+		<p>Copyright © 2023 IT Community</p>
+	</footer>

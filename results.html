@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="This is a news website for a community of people interested in IT"/>
+  <meta name="author" content="IT Community">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="keywords" content="IT, news, IT community">
+    <meta http-equiv= "X-UA_Compatible" content = "ie=edge">
+  <!--   <link   rel = stylesheet type="text/css" href ="style/style.css">-->
+  <title>Results</title>
+</head>
+    
+    
+<body>
+   
+    
+    <div id = "results"></div>
+    <a href="Login.html"> Back to form</a>
+    <script>
+    const resultsList = document.getElementById('results')
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultsList.append (`${name}: ${value}`)
+        resultsList.append (document.createElement ('br'))})
+    
+    </script>
+    </body>
+</html>

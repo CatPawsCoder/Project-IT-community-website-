@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="This is a news website for a community of people interested in IT"/>
+  <meta name="author" content="IT Community">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="keywords" content="IT, news, IT community">
+    <link   rel = stylesheet type="text/css" href ="style/style.css">
+  <title>Events</title>
+</head>
+    
+    
+<body>
+ 
+<nav>
+  <label for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle"/>
+  <div id="menu">
+    <ol>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="about%20community.html">About community</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="index.html">News and Insights</a></li>
+      </ol>
+     </div>
+</nav>
+    
+     <header>
+        <h1> Upcoming events  </h1>
+          </header>
+    <div class="event-list">
+      <ul1></ul1>
+</div>
+   <script src="js/events.js"></script>
+    </body>
+    
+    <style>
+/* Upcoming events CSS */
+/* Desktop `*/
+@media only screen and (min-width: 1011px) { 
+    
+    
+    .event-list {
+      list-style-type: none; 
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 16px -8px #8E8D8A;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 0 auto;
+}
+
+.event-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+/*  border: 1px solid #ccc;*/
+  border-radius: 5px;
+}
+
+.event-list img {
+  width: 100px;
+  height: auto;
+  float: left;
+
+  margin-right: 10px;
+    
+}
+
+.event-list button.register-button {
+  background-color: #E98074;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0 auto;
+  display: block;
+}
+
+.event-list button.register-button:hover {
+  background-color: #8E8D8A ;
+}
+/*#E98074 - #E85A4F*/
+.event-list .date {
+  background: #D8C3A5;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8E8D8A;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.event-list .title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: darkgrey;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; 
+}
+
+.event-list .description {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin-top: 10px;
+}
+
+}
+        /* Mobile */
+@media only screen and (max-width: 570px) {
+
+  .event-list {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 16px -8px #8E8D8A;
+    border-radius: 8px;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  .event-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .event-list img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .event-list button.register-button {
+    background-color: #E98074;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .event-list button.register-button:hover {
+    background-color: #8E8D8A;
+  }
+
+  .event-list .date {
+    background: #D8C3A5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8E8D8A;
+    padding: 8px 0;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .event-list .title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: darkgrey;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .event-list .description {
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 571px) and (max-width: 1010px) {
+  .event-list {
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 16px -8px #8E8D8A;
+    border-radius: 8px;
+  }
+
+  .event-list li {
+    padding: 20px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .event-list img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .event-list .date {
+    min-width: 60px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+    display: block;
+  }
+
+  .event-list .title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .event-list .description {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .event-list button.register-button {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    background-color: #E98074;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+</style>
+    	<footer>
+		<p>Copyright © 2023 IT Community</p>
+	</footer>

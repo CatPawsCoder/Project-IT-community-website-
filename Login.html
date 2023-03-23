@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="This is a news website for a community of people interested in IT"/>
+  <meta name="author" content="IT Community">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="keywords" content="IT, news, IT community">
+  <link   rel = stylesheet type="text/css" href ="style/style.css">
+  <title>Login and Register</title>
+</head>
+    
+    
+<body>
+<nav>
+  <label for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle"/>
+  <div id="menu">
+    <ol>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="about%20community.html">About community</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="index.html">News and Insights</a></li>
+      </ol>
+     </div>
+</nav>
+    <header>
+       
+           </header>
+    <form action = "results.html" method = "GET">
+     <h2 style="text-align: center">Login</h2>
+  
+      <div class="login-form ">
+          <div class="form-group">
+    <label1 for="username">Username:</label1>
+    <input type="text" id="username" name="username" required>
+      <label1 for="password">Password:</label1>
+    <input type="password" id="password" name="password" required>
+  
+          <button type="submit" class="btn">Login</button>
+      </div>
+          </div>
+  
+</form>
+
+<form action = "results.html" method = "GET">
+  <h2 style="text-align: center">Register</h2>
+    <div class="register-form ">
+  <div class="form-group">
+    <label1 for="name">Name:</label1>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label1 for="email">Email:</label1>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label1 for="password">Password:</label1>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <div class="form-group">
+    <label1 for="confirm-password">Confirm Password:</label1>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+      <button type="submit" class="btn">Register</button>
+  </div>
+    </div>
+  
+</form>
+ <script src="js/form%20checkup.js"></script>
+ 
+<style>/*for page login and register*/
+    /* Desktop */
+@media only screen and (min-width: 1011px) {
+    
+.form-group {
+margin: 3px;
+max-width: 700px;
+    
+}
+.login-form {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+    }
+label1 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E98074;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+    margin-left: 45%;
+    margin-top: 2%;
+}
+
+.btn:hover {
+  background-color: #8E8D8A ;
+}
+
+
+/* Registration Form  */
+.register-form {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+           }
+    
+    /* Tablet */
+@media only screen and (min-width: 571px) and (max-width: 1010px) {
+    
+    .form-group {
+  margin: 3px;
+  max-width: 700px;
+}
+
+.login-form, .register-form {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+label1 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E98074;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 45%;
+  margin-top: 2%;
+}
+
+.btn:hover {
+  background-color: #8E8D8A;
+    }}
+
+
+@media only screen and (max-width: 570px) {
+.form-group {
+  margin: 3px;
+  max-width: 100%;
+}
+
+.login-form, .register-form {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+label1 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #E98074;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #8E8D8A ;
+}
+
+}
+    </style>
+       
+        </body>
+    	<footer>
+		<p>Copyright © 2023 IT Community</p>
+	</footer>

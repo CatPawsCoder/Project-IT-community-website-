@@ -1,0 +1,960 @@
+/*My added code*/
+
+/*
+*  {
+    box-sizing : border-box;
+#EAE7DC - #D8C3A5 - #8E8D8A - #E98074 - #E85A4F
+}
+*/
+/*Common CSS-------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+
+/* Mobile */
+@media only screen and (max-width: 570px) {
+  body {
+    background-color: #EAE7DC;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: "Papyrus", Papyrus, fantasy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4em;
+    color: #E85A4F;
+      font-weight: 600; 
+  }
+
+  h2 {
+    font-family: "Garamond", Garamond, serif;
+    font-size: 2.0em;
+    font-style: italic;
+    text-decoration-line: underline;
+    font-variant: normal;
+    color: #E98074;
+  }
+
+  h3 {
+    font-family: "Garamond", Garamond, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: #E98074;
+  }
+
+  p {
+    font-family: "Garamond", Garamond, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #8E8D8A;
+  }
+
+  header {
+    margin-top: 2em;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Papyrus", Papyrus, fantasy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    color: #E85A4F;
+  }
+    footer {
+text-align: center;
+font-family: "Papyrus",Papyrus, fantasy;
+font-size: 7px;
+font-style: normal;
+font-variant: normal;
+color: darkred;
+}
+}
+
+/* Tablet */
+@media only screen and (min-width: 571px) and (max-width: 1010px) {
+  body {
+    background-color: #EAE7DC;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: "Papyrus", Papyrus, fantasy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.6em;
+    color: #E85A4F;
+        font-weight: 600; 
+  }
+
+  h2 {
+    font-family: "Garamond", Garamond, serif;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration-line: underline;
+    font-variant: normal;
+    color: #E98074;
+  }
+
+  h3 {
+    font-family: "Garamond", Garamond, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: #E98074;
+    text-decoration: none;
+  }
+
+  p {
+    font-family: "Garamond", Garamond, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #8E8D8A;
+  }
+
+  header {
+    margin-top: 2.2em;
+    margin-bottom: 0;
+    text-align: center;
+  }
+    footer {
+text-align: center;
+font-family: "Papyrus",Papyrus, fantasy;
+font-size: 10px;
+font-style: normal;
+font-variant: normal;
+color: darkred;
+}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1011px) {
+  body {
+    background-color: #EAE7DC;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: "Papyrus", Papyrus, fantasy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    color: #E85A4F;
+    font-weight: 600; 
+  }
+
+  h2 {
+    font-family: "Garamond", Garamond, serif;
+    font-size: 2.5em;
+    font-style: italic;
+    text-decoration-line: underline;
+    font-variant: normal;
+    color: #E98074;
+}
+ 
+        h3{
+        font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 2em;
+        color: #E98074 ;
+        text-decoration: none;
+    }
+
+          
+    p{
+        font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1.5em;;
+        color: #8E8D8A ;
+    } 
+        
+        
+header {
+ margin-top: 2.6em;
+    margin-bottom: none;
+    text-align: center;
+    
+}
+    
+    footer {
+text-align: center;
+font-family: "Papyrus",Papyrus, fantasy;
+font-size: 15px;
+font-style: normal;
+font-variant: normal;
+color: darkred;
+}
+    }     
+        
+/*Nav CSS-------------------------------------------*/        
+   nav { grid-area: nav; }
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px) {
+  nav {
+      box-shadow: 0px 0px 5px #777;
+     background-color: #f3f3f3;
+        border-radius: 10px;
+        border: 1px solid grey;
+        text-align:center;
+        width:100%;
+  }
+      label{
+        display: block;
+        cursor: pointer;
+        font-size:28px;
+        color: grey;
+        float:right;
+        margin-right: 20px;
+        position: relative;
+    }
+    
+    #toggle{
+     display: none;
+    }
+
+    nav #menu{
+        display: none;
+        border-radius: 20px;
+        width:100%;
+        clear: right;
+    }
+    
+    nav ol{
+        border:1px solid white;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+        
+    }
+    
+    nav li{
+        display:block;
+        border: 1px solid white;
+        border-radius: 5px;;
+        padding:5px;
+        
+        
+        
+    }
+    
+    nav li a {
+       font-family: 'Papyrus',Papyrus, fantasy;
+  font-style: normal;
+  font-weight: 600;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color:#E85A4F ; 
+/*            - #D8C3A5 - #8E8D8A - #E98074 - #E85A4F;*/
+        display:inline-block;
+        padding:10px;
+    
+        
+        
+    }
+
+    #toggle:checked + #menu{
+        display: block;
+    }
+}
+
+ /*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    nav{
+        box-shadow: 0px 0px 5px #777;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        border: 1px solid grey;
+        text-align:center;
+        width:100%;
+        
+        
+        
+    }
+    
+    label{
+        margin: 0 40px 0 0;
+        font-size: 26px;   
+        text-align: center;
+        display: none;
+    }
+    
+    #toggle{
+     display: none;
+    }
+    
+    nav ol{
+        border:1px solid grey;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+    }
+    
+    nav li{
+        display:inline;
+        
+        border-radius: 5px;;
+        padding:5px;
+        
+        
+    }
+    
+    nav li a {
+        font-family: 'Papyrus';
+        font-style: normal;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color:#E85A4F;
+        display:inline-block;
+        padding:10px;
+    
+        
+        
+    }
+}  
+    
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+ nav{
+        box-shadow: 0px 0px 5px #777;
+  background-color: #f3f3f3;
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align:center;
+        width:100%;
+        
+        
+        
+    }
+    
+    label{
+        margin: 0 40px 0 0;
+        font-size: 26px;   
+        text-align: center;
+        display: none;
+    }
+    
+    #toggle{
+     display: none;
+    }
+    
+    nav ol{
+        border:1px solid grey;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        box-shadow: 0px 0px 5px #777;
+  background-color: #f3f3f3;
+        
+    }
+    
+    nav li{
+        display:inline;
+        
+        border-radius: 5px;;
+        padding:5px;
+        
+        
+    }
+    
+    nav li a {
+        font-family: "Papyrus";
+        font-style: normal;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color:#E85A4F;
+        display:inline-block;
+        padding:10px;
+    
+
+    }   
+        
+    }
+}
+    
+    
+ 
+/index page news and insights/
+/* Desktop */
+@media only screen and (min-width: 1011px) {
+.grid-container {
+display: inline-grid;
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: 1.5fr 1fr;
+justify-content: space-around;
+column-gap: 3em;
+border: 2%;
+border-top: groove crimson;
+border-bottom: groove crimson;
+margin: 0% 3% 2% 3%;
+padding: 2%;
+}
+
+.main {
+grid-row-start: 1;
+grid-row-end: 4;
+text-align: center;
+}
+
+
+
+.footer {
+text-align: center;
+font-family: "Papyrus",Papyrus, fantasy;
+font-size: 30px;
+font-style: normal;
+font-variant: normal;
+color: darkred;
+}
+
+
+
+
+
+
+
+.item4 {
+grid-area: comment;
+margin: 0em 10em 0em 5em;
+text-align: justify;
+letter-spacing: 2px;
+text-indent: 2em;
+}
+
+.grid-containerAI {
+display: grid;
+grid-template-areas:
+'article othernews'
+'share othernews'
+'comment othernews';
+background-color: ;
+padding: 20px 0;
+font-size: 30px;
+}
+}
+/*index page news and insights*/
+/* Desktop */
+@media only screen and (min-width: 1011px) {    
+.grid-container {
+    display: inline-grid;
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-columns:  1.5fr 1fr;
+    justify-content: space-around;
+    column-gap: 3em;
+    border: 2%;
+    border-top: groove;
+    border-top-color: crimson;
+    border-bottom-style: groove;
+    border-bottom-color: crimson;
+    margin: 0% 3% 2% 3%;
+padding:2%;
+
+}
+
+.main {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    text-align: center;
+        }
+
+
+
+.footer {
+    text-align: center;
+    font-family: "Papyrus",Papyrus, fantasy;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal; 
+    color: darkred;
+}
+
+
+
+}
+/*index page for tablets*/
+@media only screen and (min-width: 571px) and (max-width: 1010px) {
+.grid-container {
+display: inline-grid;
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: 1fr;
+justify-content: space-around;
+column-gap: 3em;
+border: 2%;
+border-top: groove;
+border-top-color: crimson;
+border-bottom-style: groove;
+border-bottom-color: crimson;
+margin: 0% 3% 2% 3%;
+padding: 2%;
+}
+.main {
+text-align: center;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+.footer {
+text-align: center;
+font-size: 20px;
+}
+
+}
+
+
+
+/*Index page mobile*/
+@media only screen and (max-width: 570px) {
+.grid-container {
+display: block;
+border: 2%;
+border-top: groove;
+border-top-color: crimson;
+border-bottom-style: groove;
+border-bottom-color: crimson;
+margin: 0% 3% 2% 3%;
+padding: 2%;
+}
+
+
+.main {
+text-align: center;
+}
+
+.footer {
+text-align: center;
+font-size: 20px;
+}
+
+
+}
+
+
+/*AI  chatbot article*/
+/* Desktop */
+@media only screen and (min-width: 1011px) {
+.grid-containerAI { 
+    display: grid;
+  grid-template-areas:
+    'article othernews'
+    'share othernews'
+    'comment othernews';
+   background-color: ;
+  padding: 10px;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+    grid-area: article;
+margin: 0em 5em 0em 5em;
+    text-align:justify;
+    letter-spacing: 2px;
+    text-indent: 2em;
+}
+.item2{grid-area: othernews;
+grid-row-start: 1;
+grid-row-end: 4;
+border-left-style: groove;
+border-left-color: crimson;
+margin: 2%;
+padding: 3%;
+       font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 1.5em;;
+        color: #8E8D8A ;}
+
+.item3{grid-area: share;
+    margin: 0em 5em 0em 5em;
+    text-align:justify;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 1.5em;;
+        color: #8E8D8A ;}
+
+.item4 {grid-area: comment;
+     margin: 0em 10em 0em 5em;
+    text-align:justify;
+    letter-spacing: 2px;
+    text-indent: 2em;
+}
+
+.button {
+  border: none;
+  color: ;
+    background-color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+}
+/*AI  chatbot article*/
+/*tablet*/
+@media only screen and (min-width: 571px) and (max-width: 1010px) {
+.item2 {
+border-left-style: none;
+margin: 2% 0;
+padding: 3%;
+grid-row-start: 3;
+grid-row-end: 4;
+  font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 0.8em;;
+        color: #8E8D8A }
+
+.item1,
+.item3,
+.item4 {
+margin: 2% 0;
+padding: 3%;
+grid-row-start: auto;
+grid-row-end: auto;
+  font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 0.8em;;
+        color: #8E8D8A }
+
+.grid-containerAI {
+display: grid;
+grid-template-areas:
+'article'
+'othernews'
+'share'
+'comment';
+padding: 10px;
+padding-top: 20px;
+font-size: 20px;
+    }
+    .button {
+  border: none;
+  color: ;
+    background-color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+}}
+
+/*AI chatbot page mobile*/
+@media only screen and (max-width: 570px) {
+    .item1 {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-left: 90px;
+    margin-left: 900px;
+    }
+    
+    .item2 {
+         font-size: 16px;
+        line-height: 1.4;
+        border-left-style: none;
+        margin: 2% 0;
+        padding: 3%;
+        font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 0.8em;;
+        color: #8E8D8A }
+
+.item1, .item3, .item4 {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 2% 0;
+        padding: 3%;
+        font-family: "Garamond", Garamond, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 0.9em;;
+        color: #8E8D8A }
+.button {
+        border: none;
+        background-color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+}
+
+
+/*for About Community page */
+/* Desktop */
+@media only screen and (min-width: 1011px) {
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .row .image {
+    flex: 1 1 45rem;
+    padding: 1rem;
+  }
+
+  .row .image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1rem solid #d8c3a5;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+    
+   /* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+    
+  .row .content {
+    flex: 1 1 45rem;
+  }
+
+  .row .content h3 {
+    font-size: 3.5rem;
+    color: #fff;
+  }
+
+  .row .content p {
+    padding: 1rem 0;
+    line-height: 2;
+  }
+
+  .row .content li {
+    font-family: "Garamond", Garamond, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #8e8d8a;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 571px) and (max-width: 1010px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row .image {
+    padding: 1rem;
+  }
+
+  .row .image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1rem solid #d8c3a5;
+  }
+    
+    .slideshow-container {
+  max-width: 100%;
+  height: auto;
+}
+* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+    
+   /* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.row .content {
+  padding: 1rem;
+}
+
+.row .content h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.row .content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.row .content li {
+  font-size: 1.2rem;
+  color: #8E8D8A;
+  margin-left: 1.5rem;
+  font-family: "Garamond", Garamond, serif;
+  font-style: normal;
+}
+
+/* Mobile */
+@media only screen and (max-width: 570px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row .image {
+    padding: 1rem;
+  }
+
+  .row .image img {
+    width: 100%;
+    border-radius: .5rem;
+    border: 1rem solid #D8C3A5;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row .content {
+    padding: 1rem;
+  }
+
+  .row .content h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .row .content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .row .content li {
+    font-size: 1.2rem;
+    color: #8E8D8A;
+    margin-left: 1.5rem;
+    font-family: "Garamond", Garamond, serif;
+    font-style: normal;
+  }
+}
+
+
+
+
+
+
+    
+       
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 570px) {
